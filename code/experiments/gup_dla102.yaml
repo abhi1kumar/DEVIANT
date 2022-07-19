@@ -1,0 +1,41 @@
+random_seed: 444
+
+dataset:
+  type: 'kitti'
+  root_dir: 'data/'
+  batch_size: 12
+  class_merging: False
+  use_dontcare: False
+  use_3d_center: True
+  writelist: ['Car','Pedestrian','Cyclist']
+  random_flip: 0.5
+  random_crop: 0.5
+  scale: 0.4
+  shift: 0.1
+
+model:
+  type: 'gupnet'
+  backbone: 'dla102'
+  neck: 'DLAUp'
+
+optimizer:
+  type: 'adam'
+  lr: 0.00125
+  weight_decay: 0.00001
+
+lr_scheduler:
+  warmup: True  # 5 epoches, cosine warmup, init_lir=0.00001 in default
+  decay_rate: 0.1
+  decay_list: [90, 120]
+
+trainer:
+  max_epoch: 140
+  eval_frequency: 20 # evaluation interval (in epoch)
+  save_frequency: 20 # checkpoint save interval (in epoch)
+  disp_frequency: 20 # display interval (in batch)
+  log_dir: 'output'
+  #resume_model: '...'
+tester:
+  threshold: 0.2  # confidence filter
+  #resume_model: '...'
+
