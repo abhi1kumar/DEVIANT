@@ -31,7 +31,7 @@ If you find our work useful in your research, please consider citing:
 - **Requirements**
 
     1. Python 3.7
-    2. [Pytorch](http://pytorch.org) 1.10.2
+    2. [PyTorch](http://pytorch.org) 1.10.2
     3. Torchvision 0.11.3
     4. Cuda 11.3
     5. Ubuntu 18.04/Debian 8.9
