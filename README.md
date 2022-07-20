@@ -18,7 +18,7 @@ Much of the codebase is based on [GUP Net](https://github.com/SuperMHP/GUPNet). 
 
 ## Citation
 
-If you find our work useful in your research, please consider citing:
+If you find our work useful in your research, please consider starring the repo and citing:
 
     @inproceedings{kumar2022deviant,
     title={ {DEVIANT: Depth EquiVarIAnt NeTwork for Monocular $3$D Object Detection}},
