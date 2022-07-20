@@ -1,6 +1,6 @@
 # [DEVIANT: Depth EquiVarIAnt NeTwork for Monocular 3D Object Detection]()
 
-### [Project]() | [Slides]() | [Demo]() 
+### [Project]() | [Slides]() | [Demo](https://www.youtube.com/watch?v=2D73ZBrU-PA) 
 
 <img src="code/images/waymo_detection_demo.gif" width="640">
 
