@@ -20,11 +20,13 @@ Much of the codebase is based on [GUP Net](https://github.com/SuperMHP/GUPNet). 
 
 If you find our work useful in your research, please consider starring the repo and citing:
 
-    @inproceedings{kumar2022deviant,
-    title={ {DEVIANT: Depth EquiVarIAnt NeTwork for Monocular $3$D Object Detection}},
-    author={Kumar, Abhinav and Brazil, Garrick and Corona, Enrique and Parchami, Armin and Liu, Xiaoming},
-    booktitle={ECCV},
-    year={2022}}
+```Bibtex
+@inproceedings{kumar2022deviant,
+title={ {DEVIANT: Depth EquiVarIAnt NeTwork for Monocular $3$D Object Detection}},
+author={Kumar, Abhinav and Brazil, Garrick and Corona, Enrique and Parchami, Armin and Liu, Xiaoming},
+booktitle={ECCV},
+year={2022}}
+```
 
 ## Setup
 
