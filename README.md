@@ -2,8 +2,6 @@
 
 ### [Project]() | [Slides]() | [KITTI Demo](https://www.youtube.com/watch?v=2D73ZBrU-PA) | [KITTI Eqv Error Demo](https://www.youtube.com/watch?v=70DIjQkuZvw)
 
-<img src="code/images/waymo_detection_demo.gif" width="512">
-
 [Abhinav Kumar](https://sites.google.com/view/abhinavkumar/)<sup>1</sup>, 
 [Garrick Brazil](https://garrickbrazil.com/)<sup>2</sup>, 
 [Enrique Corona](https://www.linkedin.com/in/enrique-corona-0752b84)<sup>3</sup>, 
@@ -12,6 +10,12 @@
 <sup>1</sup>Michigan State University, <sup>2</sup>Meta AI, <sup>3</sup>Ford Motor Company
 
 in [ECCV 2022](https://eccv2022.ecva.net/)
+
+<img src="code/images/waymo_detection_demo.gif" width="512">
+<img src="code/images/idea_overview.png">
+
+> Modern neural networks use building blocks such as convolutions that are equivariant to arbitrary 2D translations $(t_u, t_v)$. However, these vanilla blocks are not equivariant to arbitrary 3D translations $(t_x, t_y, t_z)$ in the projective manifold. Even then, all monocular 3D detectors use vanilla blocks to obtain the 3D coordinates, a task for which the vanilla blocks are not designed for. This paper takes the first step towards convolutions equivariant to arbitrary 3D translations in the projective manifold. Since the depth is the hardest to estimate for monocular detection, this paper proposes Depth EquiVarIAnt NeTwork (DEVIANT) built with existing scale equivariant steerable blocks. As a result, DEVIANT is equivariant to the depth translations $(t_z)$ in the projective manifold whereas vanilla networks are not. The additional depth equivariance forces the DEVIANT to learn consistent depth estimates, and therefore, DEVIANT achieves state-of-the-art monocular 3D detection results on KITTI and Waymo datasets in the image-only category and performs competitively to methods using extra information. Moreover, DEVIANT works better than vanilla networks in cross-dataset evaluation.
+
 
 Much of the codebase is based on [GUP Net](https://github.com/SuperMHP/GUPNet). Some implementations are from [GrooMeD-NMS](https://github.com/abhi1kumar/groomed_nms) and [PCT](https://github.com/amazon-research/progressive-coordinate-transforms). Scale Equivariant Steerable (SES) implementations are from [SiamSE](https://github.com/ISosnovik/SiamSE).
 
