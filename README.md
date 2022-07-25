@@ -1,8 +1,8 @@
-# [DEVIANT: Depth EquiVarIAnt NeTwork for Monocular 3D Object Detection]()
+# [DEVIANT: Depth EquiVarIAnt NeTwork for Monocular 3D Object Detection](https://arxiv.org/pdf/2207.10758.pdf)
 
-### [Project]() | [Slides]() | [Demo](https://www.youtube.com/watch?v=2D73ZBrU-PA) 
+### [Project]() | [Slides]() | [KITTI Demo](https://www.youtube.com/watch?v=2D73ZBrU-PA) | [KITTI Eqv Error Demo](https://www.youtube.com/watch?v=70DIjQkuZvw)
 
-<img src="code/images/waymo_detection_demo.gif" width="640">
+<img src="code/images/waymo_detection_demo.gif" width="512">
 
 [Abhinav Kumar](https://sites.google.com/view/abhinavkumar/)<sup>1</sup>, 
 [Garrick Brazil](https://garrickbrazil.com/)<sup>2</sup>, 
@@ -22,10 +22,11 @@ If you find our work useful in your research, please consider starring the repo 
 
 ```Bibtex
 @inproceedings{kumar2022deviant,
-title={ {DEVIANT: Depth EquiVarIAnt NeTwork for Monocular $3$D Object Detection}},
-author={Kumar, Abhinav and Brazil, Garrick and Corona, Enrique and Parchami, Armin and Liu, Xiaoming},
-booktitle={ECCV},
-year={2022}}
+   title={{DEVIANT: Depth EquiVarIAnt NeTwork for Monocular $3$D Object Detection}},
+   author={Kumar, Abhinav and Brazil, Garrick and Corona, Enrique and Parchami, Armin and Liu, Xiaoming},
+   booktitle={ECCV},
+   year={2022}
+}
 ```
 
 ## Setup
@@ -33,8 +34,8 @@ year={2022}}
 - **Requirements**
 
     1. Python 3.7
-    2. [PyTorch](http://pytorch.org) 1.10.2
-    3. Torchvision 0.11.3
+    2. [PyTorch](http://pytorch.org) 1.10
+    3. Torchvision 0.11
     4. Cuda 11.3
     5. Ubuntu 18.04/Debian 8.9
 
