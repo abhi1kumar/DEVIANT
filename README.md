@@ -116,6 +116,8 @@ Follow instructions of [data_setup_README.md](code/data/data_setup_README.md) to
 Run the following to generate the KITTI binaries corresponding to `R40`:
 
 ```bash
+sudo apt-get install libopenblas-dev libboost-dev libboost-all-dev
+sudo apt install gfortran
 sh data/KITTI/kitti_split1/devkit/cpp/build.sh
 ```
 
