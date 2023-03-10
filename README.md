@@ -1,3 +1,5 @@
+<img src="code/images/cvlab.png" align="right">
+
 # [DEVIANT: Depth EquiVarIAnt NeTwork for Monocular 3D Object Detection](https://arxiv.org/pdf/2207.10758.pdf)
 
 ### [KITTI Demo](https://www.youtube.com/watch?v=2D73ZBrU-PA) | [KITTI Eqv Error Demo](https://www.youtube.com/watch?v=70DIjQkuZvw) | [Waymo Demo](https://www.youtube.com/watch?v=46S_OGxYFOM) | [Project](http://cvlab.cse.msu.edu/project-deviant.html) | [Talk](https://www.youtube.com/watch?v=yDrLYjmER4M) | [Slides](https://docs.google.com/presentation/d/1sSH1ArzqWvyswgmqEJCXlxAJBaLY1qxzZX0w4NojUAA/edit?usp=sharing) | [Poster](https://docs.google.com/presentation/d/1NB5YuPNDhctkA2EHYGJ1NZYe6ttPsumIll4ef9BDji4/edit?usp=sharing)
