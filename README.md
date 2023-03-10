@@ -1,4 +1,4 @@
-<img src="code/images/cvlab.png" align="right">
+<img src="code/images/cvlab.png" align="right" width=8%>
 
 # [DEVIANT: Depth EquiVarIAnt NeTwork for Monocular 3D Object Detection](https://arxiv.org/pdf/2207.10758.pdf)
 
