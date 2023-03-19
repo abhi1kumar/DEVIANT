@@ -165,7 +165,7 @@ The current Waymo config files use the full val set in training. For Waymo model
 
 We provide logs/models/predictions for the main experiments on KITTI Val /KITTI Test/Waymo Val data splits available to download here.
 
-| DataSplit | Method  | Run/Config                                                       | Weights  | Metric | All<br/>(0.7) | Easy<br/>(0.7) | Med<br/>(0.7) | Hard<br/>(0.7) |All<br/>(0.5) | Easy<br/>(0.5) | Med<br/>(0.5) | Hard<br/>(0.5) | 
+| DataSplit&nbsp;&nbsp; | Method  | Run/Config                                                       | Weights  | Metric | All<br/>(0.7) | Easy<br/>(0.7) | Med<br/>(0.7) | Hard<br/>(0.7) |All<br/>(0.5) | Easy<br/>(0.5) | Med<br/>(0.5) | Hard<br/>(0.5) | 
 |------------|---------|------------------------------------------------------------------|----------|--------|----------|-----------|----------|-----------|----------------|----|--------------|-----------|
 | KITTI Val  | GUP Net | [run_201_v0_1](code/experiments/config_run_201_a100_v0_1.yaml) | [gdrive](https://drive.google.com/file/d/17qezmIjckRSAva1fNnYBmgR9LaY-dPnp/view?usp=sharing)                                 | AP40  |   -   | 21.10 | 15.48 | 12.88 |   -   | 58.95 | 43.99 | 38.07 
 | KITTI Val  | DEVIANT | [run_221](code/experiments/run_221.yaml)                                   | [gdrive](https://drive.google.com/file/d/1CBJf8keOutXVSAiu9Fj7XQPQftNYC1qv/view?usp=sharing)   | AP40  |   -   | 24.63 | 16.54 | 14.52 |   -   | 61.00 | 46.00 | 40.18
