@@ -165,13 +165,13 @@ The current Waymo config files use the full val set in training. For Waymo model
 
 We provide logs/models/predictions for the main experiments on KITTI Val /KITTI Test/Waymo Val data splits available to download here.
 
-| DataSplit&nbsp;&nbsp; | Method  | Run/Config                                                       | Weights  | Metric | All<br/>(0.7) | Easy<br/>(0.7) | Med<br/>(0.7) | Hard<br/>(0.7) |All<br/>(0.5) | Easy<br/>(0.5) | Med<br/>(0.5) | Hard<br/>(0.5) | 
+| Data-Split | Method  | Config<br/>(Run)                                          | Weight<br>/Pred  | Metrics | All<br/>(0.7) | Easy<br/>(0.7) | Med<br/>(0.7) | Hard<br/>(0.7) |All<br/>(0.5) | Easy<br/>(0.5) | Med<br/>(0.5) | Hard<br/>(0.5) | 
 |------------|---------|------------------------------------------------------------------|----------|--------|----------|-----------|----------|-----------|----------------|----|--------------|-----------|
-| KITTI Val  | GUP Net | [run_201_v0_1](code/experiments/config_run_201_a100_v0_1.yaml) | [gdrive](https://drive.google.com/file/d/17qezmIjckRSAva1fNnYBmgR9LaY-dPnp/view?usp=sharing)                                 | AP40  |   -   | 21.10 | 15.48 | 12.88 |   -   | 58.95 | 43.99 | 38.07 
-| KITTI Val  | DEVIANT | [run_221](code/experiments/run_221.yaml)                                   | [gdrive](https://drive.google.com/file/d/1CBJf8keOutXVSAiu9Fj7XQPQftNYC1qv/view?usp=sharing)   | AP40  |   -   | 24.63 | 16.54 | 14.52 |   -   | 61.00 | 46.00 | 40.18
-| KITTI Test | DEVIANT | [run_250](code/experiments/run_250.yaml)                                   | [gdrive](https://drive.google.com/file/d/1_79GfHcpAQR3wdvhj9GDHc7_c_ndf1Al/view?usp=sharing)   | AP40  |   -   | 21.88 | 14.46 | 11.89 |   -   |   -   |   -   |   -   
-| Waymo Val  | GUP Net | [run_1050](code/experiments/run_1050.yaml)                                 | [gdrive](https://drive.google.com/file/d/1wuTTuZrFVsEv4ttQ0r3X_s8D3OjYE84E/view?usp=sharing)   | APH-L1|  2.27 |  6.11 |  0.80 |  0.03 |  9.94 | 24.59 |  4.78 |  0.22
-| Waymo Val  | DEVIANT | [run_1051](code/experiments/run_1051.yaml)                                 | [gdrive](https://drive.google.com/file/d/1ixCVS85yVU9k6kuHrcYw_qJoy9Z4d0FD/view?usp=sharing)   | APH-L1|  2.67 |  6.90 |  0.98 |  0.02 | 10.89 | 26.64 |  5.08 |  0.18
+| KITTI Val  | GUP Net | [run_201](code/experiments/config_run_201_a100_v0_1.yaml) | [gdrive](https://drive.google.com/file/d/17qezmIjckRSAva1fNnYBmgR9LaY-dPnp/view?usp=sharing) | AP40  |   -   | 21.10 | 15.48 | 12.88 |   -   | 58.95 | 43.99 | 38.07 
+| KITTI Val  | DEVIANT | [run_221](code/experiments/run_221.yaml)                  | [gdrive](https://drive.google.com/file/d/1CBJf8keOutXVSAiu9Fj7XQPQftNYC1qv/view?usp=sharing)     | AP40  |   -   | 24.63 | 16.54 | 14.52 |   -   | 61.00 | 46.00 | 40.18
+| KITTI Test | DEVIANT | [run_250](code/experiments/run_250.yaml)                  | [gdrive](https://drive.google.com/file/d/1_79GfHcpAQR3wdvhj9GDHc7_c_ndf1Al/view?usp=sharing)     | AP40  |   -   | 21.88 | 14.46 | 11.89 |   -   |   -   |   -   |   -   
+| Waymo Val  | GUP Net | [run_1050](code/experiments/run_1050.yaml)                | [gdrive](https://drive.google.com/file/d/1wuTTuZrFVsEv4ttQ0r3X_s8D3OjYE84E/view?usp=sharing)     | APH-L1|  2.27 |  6.11 |  0.80 |  0.03 |  9.94 | 24.59 |  4.78 |  0.22
+| Waymo Val  | DEVIANT | [run_1051](code/experiments/run_1051.yaml)                | [gdrive](https://drive.google.com/file/d/1ixCVS85yVU9k6kuHrcYw_qJoy9Z4d0FD/view?usp=sharing)     | APH-L1|  2.67 |  6.90 |  0.98 |  0.02 | 10.89 | 26.64 |  5.08 |  0.18
 
 ### Testing
 
