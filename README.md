@@ -23,6 +23,7 @@ Much of the codebase is based on [GUP Net](https://github.com/SuperMHP/GUPNet). 
 
 [![arXiv](http://img.shields.io/badge/arXiv-2207.10758-B31B1B.svg)](https://arxiv.org/abs/2207.10758)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![visitors](https://visitor-badge.glitch.me/badge?page_id=abhi1kumar/DEVIANT)
 
 ## Citation
 
