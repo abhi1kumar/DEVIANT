@@ -4,6 +4,8 @@
 
 ### [KITTI Demo](https://www.youtube.com/watch?v=2D73ZBrU-PA) | [KITTI Eqv Error Demo](https://www.youtube.com/watch?v=70DIjQkuZvw) | [Waymo Demo](https://www.youtube.com/watch?v=46S_OGxYFOM) | [Project](http://cvlab.cse.msu.edu/project-deviant.html) | [Talk](https://www.youtube.com/watch?v=yDrLYjmER4M) | [Slides](https://docs.google.com/presentation/d/1sSH1ArzqWvyswgmqEJCXlxAJBaLY1qxzZX0w4NojUAA/edit?usp=sharing) | [Poster](https://docs.google.com/presentation/d/1NB5YuPNDhctkA2EHYGJ1NZYe6ttPsumIll4ef9BDji4/edit?usp=sharing)
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/deviant-depth-equivariant-network-for/monocular-3d-object-detection-on-kitti-cars)](https://paperswithcode.com/sota/monocular-3d-object-detection-on-kitti-cars?p=deviant-depth-equivariant-network-for) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/deviant-depth-equivariant-network-for/3d-object-detection-from-monocular-images-on-6)](https://paperswithcode.com/sota/3d-object-detection-from-monocular-images-on-6?p=deviant-depth-equivariant-network-for)
+
 [Abhinav Kumar](https://sites.google.com/view/abhinavkumar/)<sup>1</sup>, 
 [Garrick Brazil](https://garrickbrazil.com/)<sup>2</sup>, 
 [Enrique Corona](https://www.linkedin.com/in/enrique-corona-0752b84)<sup>3</sup>, 
