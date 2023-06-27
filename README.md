@@ -208,9 +208,9 @@ chmod +x scripts_inference.sh
 
 See [scripts_inference.sh](code/scripts_inference.sh)
 
-### Qualitative Plots
+### Qualitative Plots/Visualization
 
-To get qualitative plots, type the following:
+To get qualitative plots and visualize the predicted+GT boxes, type the following:
 
 ```bash
 python plot/plot_qualitative_output.py --dataset waymo --folder output/run_1051/results_test/data
