@@ -26,6 +26,11 @@ parser.add_argument('--resume_model', type=str, default=None)
 args = parser.parse_args()
 
 def create_logger(log_file):
+    # Remove all handlers associated with the root logger object.
+    # See https://stackoverflow.com/a/49202811
+    for handler in logging.root.handlers[:]:
+        logging.root.removeHandler(handler)
+
     log_format = '%(asctime)s  %(levelname)5s  %(message)s'
     logging.basicConfig(level=logging.INFO, format=log_format, filename=log_file)
     console = logging.StreamHandler()
