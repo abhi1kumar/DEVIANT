@@ -524,9 +524,12 @@ def read_folder_and_get_all_errors(input_folder, prediction_folder_relative, num
 
     return error_list
 
-def open_gif_writer(file_path, duration= 0.5):
+def open_gif_writer(file_path, duration= 0.5, loop= 0):
     print("=> Saving to {}".format(file_path))
-    gif_writer = imageio.get_writer(file_path, mode='I', duration= duration)
+    if loop is None:
+        gif_writer = imageio.get_writer(file_path, mode='I', duration= duration)
+    else:
+        gif_writer = imageio.get_writer(file_path, mode='I', duration= duration, loop= loop)
 
     return gif_writer
 

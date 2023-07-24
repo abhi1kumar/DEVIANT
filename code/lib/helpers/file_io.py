@@ -12,10 +12,14 @@ import logging
 import warnings
 import json
 
-def imread(path):
+def imread(path, sixteen_bit= False, rgb= False):
 
-    return cv2.imread(path)
-
+    if sixteen_bit:
+        return cv2.imread(path, -1)
+    else:
+        if rgb:
+            return cv2.cvtColor(cv2.imread(path), cv2.COLOR_BGR2RGB)
+        return cv2.imread(path)
 
 def imwrite(im, path):
 
