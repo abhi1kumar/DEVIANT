@@ -11,7 +11,7 @@
 [Enrique Corona](https://www.linkedin.com/in/enrique-corona-0752b84)<sup>3</sup>, 
 [Armin Parchami](https://www.linkedin.com/in/parchami/)<sup>3</sup>, 
 [Xiaoming Liu](http://www.cse.msu.edu/~liuxm/index2.html)<sup>1</sup> <br>
-<sup>1</sup>Michigan State University, <sup>2</sup>Meta AI, <sup>3</sup>Ford Motor Company
+<sup>1</sup>Michigan State University, <sup>2</sup>FAIR, Meta AI, <sup>3</sup>Ford Motor Company
 
 in [ECCV 2022](https://eccv2022.ecva.net/)
 
@@ -213,6 +213,7 @@ See [scripts_inference.sh](code/scripts_inference.sh)
 To get qualitative plots and visualize the predicted+GT boxes, type the following:
 
 ```bash
+python plot/plot_qualitative_output.py --dataset kitti --folder output/run_221/results_test/data
 python plot/plot_qualitative_output.py --dataset waymo --folder output/run_1051/results_test/data
 ```
 
