@@ -238,6 +238,7 @@ This will result in the following directory structure:
 │                         └── velodyne
 
 ```
+
 As a sanity check, you should see a total of more than 39k  `calib`, `image_0` and `label_0` files in all the segment_ids of `validation_org` folder.
 
 ```bash
@@ -287,6 +288,48 @@ cd ImageSets
 sort -R --random-source=<(yes 123) val.txt | head -n 1000 > val_small.txt
 cd ../../../
 ```
+
+**Alter Way**
+
+We also upload the `calib` and `label` subfolders of the waymo training and validation split at this [ drive link](https://drive.google.com/file/d/1Yzs3gZWsdvI0IX_ZjeiI5Y0XmrFutfFz/view?usp=sharing).
+
+Unzip the above file and place them as follows:
+```bash
+DEVIANT
+├── data
+│      └── waymo
+│             ├── ImageSets
+│             ├── training
+│             │     ├── calib
+│             │     └── label
+│             │
+│             └── validation
+│                   ├── calib
+│                   └── label
+
+```
+
+Then consider copying the corresponding images in the `image` sub-folder of `training` and `validation` folders to complete the folder structure:
+```bash
+DEVIANT
+├── data
+│      └── waymo
+│             ├── ImageSets
+│             ├── training
+│             │     ├── calib
+│             │     ├── image
+│             │     └── label
+│             │
+│             └── validation
+│                   ├── calib
+│                   ├── image
+│                   └── label
+
+```
+
+
+
+**Transfer**
 
 If you have Waymo dataset prepared and you need to transfer to your server, type the following:
 
