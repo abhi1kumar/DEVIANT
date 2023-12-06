@@ -1,4 +1,4 @@
-<img src="code/images/cvlab.png" align="right" width=8%>
+<img src="images/cvlab.png" align="right" width=8%>
 
 # [DEVIANT: Depth EquiVarIAnt NeTwork for Monocular 3D Object Detection](https://arxiv.org/pdf/2207.10758.pdf)
 
@@ -15,8 +15,8 @@
 
 in [ECCV 2022](https://eccv2022.ecva.net/)
 
-<img src="code/images/waymo_detection_demo.gif" width="512">
-<img src="code/images/idea_overview.png">
+<img src="images/waymo_detection_demo.gif" width="512">
+<img src="images/idea_overview.png">
 
 > Modern neural networks use building blocks such as convolutions that are equivariant to arbitrary 2D translations $(t_u, t_v)$. However, these vanilla blocks are not equivariant to arbitrary 3D translations $(t_x, t_y, t_z)$ in the projective manifold. Even then, all monocular 3D detectors use vanilla blocks to obtain the 3D coordinates, a task for which the vanilla blocks are not designed for. This paper takes the first step towards convolutions equivariant to arbitrary 3D translations in the projective manifold. Since the depth is the hardest to estimate for monocular detection, this paper proposes Depth EquiVarIAnt NeTwork (DEVIANT) built with existing scale equivariant steerable blocks. As a result, DEVIANT is equivariant to the depth translations $(t_z)$ in the projective manifold whereas vanilla networks are not. The additional depth equivariance forces the DEVIANT to learn consistent depth estimates, and therefore, DEVIANT achieves state-of-the-art monocular 3D detection results on KITTI and Waymo datasets in the image-only category and performs competitively to methods using extra information. Moreover, DEVIANT works better than vanilla networks in cross-dataset evaluation.
 
@@ -50,11 +50,11 @@ If you find our work useful in your research, please consider starring the repo 
     4. Cuda 11.3
     5. Ubuntu 18.04/Debian 8.9
 
-This is tested with NVIDIA A100 GPU. Other platforms have not been tested. Clone the repo first. Unless otherwise stated, the below scripts and instructions assume the working directory is the directory `code`:
+This is tested with NVIDIA A100 GPU. Other platforms have not been tested. Clone the repo first. Unless otherwise stated, the below scripts and instructions assume the working directory is the directory `DEVIANT`:
 
 ```bash
 git clone https://github.com/abhi1kumar/DEVIANT.git
-cd DEVIANT/code
+cd DEVIANT
 ```
 
 - **Cuda & Python**
@@ -69,10 +69,10 @@ pip install opencv-python pandas
 
 - **KITTI, nuScenes and Waymo Data**
 
-Follow instructions of [data_setup_README.md](code/data/data_setup_README.md) to setup KITTI, nuScenes and Waymo as follows:
+Follow instructions of [data_setup_README.md](data/data_setup_README.md) to setup KITTI, nuScenes and Waymo as follows:
 
 ```bash
-./code
+DEVIANT
 ├── data
 │      ├── KITTI
 │      │      ├── ImageSets
@@ -169,15 +169,15 @@ We provide logs/models/predictions for the main experiments on KITTI Val /KITTI 
 
 | Data_Splits | Method  | Config<br/>(Run)                                          | Weight<br>/Pred  | Metrics | All<br/>(0.7) | Easy<br/>(0.7) | Med<br/>(0.7) | Hard<br/>(0.7) |All<br/>(0.5) | Easy<br/>(0.5) | Med<br/>(0.5) | Hard<br/>(0.5) | 
 |------------|---------|------------------------------------------------------------------|----------|--------|----------|-----------|----------|-----------|----------------|----|--------------|-----------|
-| KITTI Val  | GUP Net | [run_201](code/experiments/config_run_201_a100_v0_1.yaml) | [gdrive](https://drive.google.com/file/d/17qezmIjckRSAva1fNnYBmgR9LaY-dPnp/view?usp=sharing) | AP40  |   -   | 21.10 | 15.48 | 12.88 |   -   | 58.95 | 43.99 | 38.07 
-| KITTI Val  | DEVIANT | [run_221](code/experiments/run_221.yaml)                  | [gdrive](https://drive.google.com/file/d/1CBJf8keOutXVSAiu9Fj7XQPQftNYC1qv/view?usp=sharing)     | AP40  |   -   | 24.63 | 16.54 | 14.52 |   -   | 61.00 | 46.00 | 40.18
-| KITTI Test | DEVIANT | [run_250](code/experiments/run_250.yaml)                  | [gdrive](https://drive.google.com/file/d/1_79GfHcpAQR3wdvhj9GDHc7_c_ndf1Al/view?usp=sharing)     | AP40  |   -   | 21.88 | 14.46 | 11.89 |   -   |   -   |   -   |   -   
-| Waymo Val  | GUP Net | [run_1050](code/experiments/run_1050.yaml)                | [gdrive](https://drive.google.com/file/d/1wuTTuZrFVsEv4ttQ0r3X_s8D3OjYE84E/view?usp=sharing)     | APH-L1|  2.27 |  6.11 |  0.80 |  0.03 |  9.94 | 24.59 |  4.78 |  0.22
-| Waymo Val  | DEVIANT | [run_1051](code/experiments/run_1051.yaml)                | [gdrive](https://drive.google.com/file/d/1ixCVS85yVU9k6kuHrcYw_qJoy9Z4d0FD/view?usp=sharing)     | APH-L1|  2.67 |  6.90 |  0.98 |  0.02 | 10.89 | 26.64 |  5.08 |  0.18
+| KITTI Val  | GUP Net | [run_201](experiments/config_run_201_a100_v0_1.yaml) | [gdrive](https://drive.google.com/file/d/17qezmIjckRSAva1fNnYBmgR9LaY-dPnp/view?usp=sharing) | AP40  |   -   | 21.10 | 15.48 | 12.88 |   -   | 58.95 | 43.99 | 38.07 
+| KITTI Val  | DEVIANT | [run_221](experiments/run_221.yaml)                  | [gdrive](https://drive.google.com/file/d/1CBJf8keOutXVSAiu9Fj7XQPQftNYC1qv/view?usp=sharing)     | AP40  |   -   | 24.63 | 16.54 | 14.52 |   -   | 61.00 | 46.00 | 40.18
+| KITTI Test | DEVIANT | [run_250](experiments/run_250.yaml)                  | [gdrive](https://drive.google.com/file/d/1_79GfHcpAQR3wdvhj9GDHc7_c_ndf1Al/view?usp=sharing)     | AP40  |   -   | 21.88 | 14.46 | 11.89 |   -   |   -   |   -   |   -   
+| Waymo Val  | GUP Net | [run_1050](experiments/run_1050.yaml)                | [gdrive](https://drive.google.com/file/d/1wuTTuZrFVsEv4ttQ0r3X_s8D3OjYE84E/view?usp=sharing)     | APH-L1|  2.27 |  6.11 |  0.80 |  0.03 |  9.94 | 24.59 |  4.78 |  0.22
+| Waymo Val  | DEVIANT | [run_1051](experiments/run_1051.yaml)                | [gdrive](https://drive.google.com/file/d/1ixCVS85yVU9k6kuHrcYw_qJoy9Z4d0FD/view?usp=sharing)     | APH-L1|  2.67 |  6.90 |  0.98 |  0.02 | 10.89 | 26.64 |  5.08 |  0.18
 
 ### Testing
 
-Make `output` folder in the `code` directory:
+Make `output` folder in the `DEVIANT` directory:
 
 ```bash
 mkdir output
@@ -185,7 +185,7 @@ mkdir output
 Place models in the `output` folder as follows:
 
 ```bash
-./code
+DEVIANT
 ├── output
 │      ├── config_run_201_a100_v0_1
 │      ├── run_221
@@ -205,7 +205,7 @@ chmod +x scripts_inference.sh
 
 ### Cross-Dataset Evaluation of KITTI on nuScenes Frontal Val
 
-See [scripts_inference.sh](code/scripts_inference.sh)
+See [scripts_inference.sh](scripts_inference.sh)
 
 ### Qualitative Plots/Visualization
 
