@@ -1,22 +1,36 @@
+<div align="center">
+
 <img src="images/cvlab.png" align="right" width=8%>
 
 # [DEVIANT: Depth EquiVarIAnt NeTwork for Monocular 3D Object Detection](https://arxiv.org/pdf/2207.10758.pdf)
 
 ### [KITTI Demo](https://www.youtube.com/watch?v=2D73ZBrU-PA) | [KITTI Eqv Error Demo](https://www.youtube.com/watch?v=70DIjQkuZvw) | [Waymo Demo](https://www.youtube.com/watch?v=46S_OGxYFOM) | [Project](http://cvlab.cse.msu.edu/project-deviant.html) | [Talk](https://www.youtube.com/watch?v=yDrLYjmER4M) | [Slides](https://docs.google.com/presentation/d/1sSH1ArzqWvyswgmqEJCXlxAJBaLY1qxzZX0w4NojUAA/edit?usp=sharing) | [Poster](https://docs.google.com/presentation/d/1NB5YuPNDhctkA2EHYGJ1NZYe6ttPsumIll4ef9BDji4/edit?usp=sharing)
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/deviant-depth-equivariant-network-for/monocular-3d-object-detection-on-kitti-cars)](https://paperswithcode.com/sota/monocular-3d-object-detection-on-kitti-cars?p=deviant-depth-equivariant-network-for) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/deviant-depth-equivariant-network-for/3d-object-detection-from-monocular-images-on-6)](https://paperswithcode.com/sota/3d-object-detection-from-monocular-images-on-6?p=deviant-depth-equivariant-network-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/deviant-depth-equivariant-network-for/monocular-3d-object-detection-on-kitti-cars)](https://paperswithcode.com/sota/monocular-3d-object-detection-on-kitti-cars?p=deviant-depth-equivariant-network-for) 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/deviant-depth-equivariant-network-for/3d-object-detection-from-monocular-images-on-6)](https://paperswithcode.com/sota/3d-object-detection-from-monocular-images-on-6?p=deviant-depth-equivariant-network-for)
 
-[Abhinav Kumar](https://sites.google.com/view/abhinavkumar/)<sup>1</sup>, 
-[Garrick Brazil](https://garrickbrazil.com/)<sup>2</sup>, 
-[Enrique Corona](https://www.linkedin.com/in/enrique-corona-0752b84)<sup>3</sup>, 
-[Armin Parchami](https://www.linkedin.com/in/parchami/)<sup>3</sup>, 
-[Xiaoming Liu](http://www.cse.msu.edu/~liuxm/index2.html)<sup>1</sup> <br>
-<sup>1</sup>Michigan State University, <sup>2</sup>FAIR, Meta AI, <sup>3</sup>Ford Motor Company
+[![arXiv](http://img.shields.io/badge/arXiv-2207.10758-B31B1B.svg)](https://arxiv.org/abs/2207.10758)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=abhi1kumar%2FDEVIANT&labelColor=%23FFFFFF&countColor=%23721e82&style=flat)](https://visitorbadge.io/status?path=abhi1kumar%2FDEVIANT)
+[![GitHub Stars](https://img.shields.io/github/stars/abhi1kumar/DEVIANT?style=social)](https://github.com/abhi1kumar/DEVIANT)
+
+<p style="font-size:1.2em">
+   <a href="https://sites.google.com/view/abhinavkumar"><strong>Abhinav Kumar</strong></a><sup>1</sup> ·
+   <a href="https://garrickbrazil.com"><strong>Garrick Brazil</strong></a><sup>2</sup> .
+   <a href="https://www.linkedin.com/in/enrique-corona-0752b84"><strong>Enrique Corona</strong></a><sup>3</sup> .
+   <a href="https://www.linkedin.com/in/parchami"><strong>Armin Parchami</strong></a><sup>3</sup> .
+   <a href="http://www.cse.msu.edu/~liuxm/index2.html"><strong>Xiaoming Liu</strong></a><sup>1</sup><br>
+   <sup>1</sup>Michigan State University, <sup>2</sup>FAIR, Meta AI, <sup>3</sup>Ford Motor Company
+</p>
 
 in [ECCV 2022](https://eccv2022.ecva.net/)
-
-<img src="images/waymo_detection_demo.gif" width="512">
-<img src="images/idea_overview.png">
+   <p align="center">
+      <img src="images/waymo_detection_demo.gif" width="512">
+   </p>
+   <p align="center">
+      <img src="images/idea_overview.png">
+   </p>
+</div>
 
 > Modern neural networks use building blocks such as convolutions that are equivariant to arbitrary 2D translations $(t_u, t_v)$. However, these vanilla blocks are not equivariant to arbitrary 3D translations $(t_x, t_y, t_z)$ in the projective manifold. Even then, all monocular 3D detectors use vanilla blocks to obtain the 3D coordinates, a task for which the vanilla blocks are not designed for. This paper takes the first step towards convolutions equivariant to arbitrary 3D translations in the projective manifold. Since the depth is the hardest to estimate for monocular detection, this paper proposes Depth EquiVarIAnt NeTwork (DEVIANT) built with existing scale equivariant steerable blocks. As a result, DEVIANT is equivariant to the depth translations $(t_z)$ in the projective manifold whereas vanilla networks are not. The additional depth equivariance forces the DEVIANT to learn consistent depth estimates, and therefore, DEVIANT achieves state-of-the-art monocular 3D detection results on KITTI and Waymo datasets in the image-only category and performs competitively to methods using extra information. Moreover, DEVIANT works better than vanilla networks in cross-dataset evaluation.
 
