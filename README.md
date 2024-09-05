@@ -16,9 +16,9 @@
 
 <p style="font-size:1.2em">
    <a href="https://sites.google.com/view/abhinavkumar"><strong>Abhinav Kumar</strong></a><sup>1</sup> ·
-   <a href="https://garrickbrazil.com"><strong>Garrick Brazil</strong></a><sup>2</sup> .
-   <a href="https://www.linkedin.com/in/enrique-corona-0752b84"><strong>Enrique Corona</strong></a><sup>3</sup> .
-   <a href="https://www.linkedin.com/in/parchami"><strong>Armin Parchami</strong></a><sup>3</sup> .
+   <a href="https://garrickbrazil.com"><strong>Garrick Brazil</strong></a><sup>2</sup> ·
+   <a href="https://www.linkedin.com/in/enrique-corona-0752b84"><strong>Enrique Corona</strong></a><sup>3</sup> ·
+   <a href="https://www.linkedin.com/in/parchami"><strong>Armin Parchami</strong></a><sup>3</sup> ·
    <a href="http://www.cse.msu.edu/~liuxm/index2.html"><strong>Xiaoming Liu</strong></a><sup>1</sup><br>
    <sup>1</sup>Michigan State University, <sup>2</sup>FAIR, Meta AI, <sup>3</sup>Ford Motor Company
 </p>
