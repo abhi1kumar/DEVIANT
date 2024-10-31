@@ -257,7 +257,15 @@ pip install numpy==1.19.5
 ```
 
 ## Acknowledgements
-We thank the authors of [GUP Net](https://github.com/SuperMHP/GUPNet), [GrooMeD-NMS](https://github.com/abhi1kumar/groomed_nms), [SiamSE](https://github.com/ISosnovik/SiamSE), [PCT](https://github.com/amazon-research/progressive-coordinate-transforms) and [patched nuscenes-devkit](https://github.com/abhi1kumar/nuscenes-devkit) for their awesome codebases. Please also consider citing them.
+We thank the authors of following awesome codebases:
+
+- [GUP Net](https://github.com/SuperMHP/GUPNet)
+- [GrooMeD-NMS](https://github.com/abhi1kumar/groomed_nms)
+- [SiamSE](https://github.com/ISosnovik/SiamSE)
+- [PCT](https://github.com/amazon-research/progressive-coordinate-transforms)
+- [patched nuscenes-devkit](https://github.com/abhi1kumar/nuscenes-devkit) 
+
+Please also consider citing them.
 
 ## Contributions
 We welcome contributions to the DEVIANT repo. Feel free to raise a pull request.
